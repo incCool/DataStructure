@@ -9,6 +9,6 @@ C++ DATA STRUCTURE
 
   ·(2)hfiles director include .h files;·
   
-#2.The algorithms included are:
+2.The algorithms included are:
 
   (1)Counting Sort ----->countingSortInc.cpp
