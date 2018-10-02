@@ -1,8 +1,11 @@
 #include <iostream>
 #include "hfiles/tools.h"
+#include "cppfiles/TreeTools.cpp"
+
+using namespace std;
 
 int main() {
     printH();
-    int nihao ;
+    printk();
     return 0;
 }
