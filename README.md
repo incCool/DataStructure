@@ -5,9 +5,9 @@ Summary:
 ====
 ## 1.Directory Description：
 
-  　　(1) cppfiles Directory include .cpp files;
+  　　(1) cppfiles directory include .cpp files;
 
-  　　(2) hfiles director include .h files;
+  　　(2) hfiles directory include .h files;
   
 ## 2.The algorithms included are:
 
