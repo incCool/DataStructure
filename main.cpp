@@ -1,6 +1,7 @@
 #include <iostream>
+#include "hfiles/tools.h"
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+    printH();
     return 0;
 }
