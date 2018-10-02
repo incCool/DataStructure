@@ -3,8 +3,9 @@ C++ DATA STRUCTURE
 
 Summary:
 
-文件目录说明：
-  1.cppfiles:存放.cpp文件
-  2.hfiles: 存放.h文件
-
-1.计数排序 coutingSortInc.cpp
+1.Directory Description：
+(1)cppfiles Directory include .cpp files;
+(2)hfiles director include .h files;
+  
+2.The algorithms included are:
+(1)Counting Sort ----->countingSortInc.cpp
