@@ -1,4 +1,4 @@
-# datastructure
+# Datastructure
 C++ DATA STRUCTURE
 
 Summary:
