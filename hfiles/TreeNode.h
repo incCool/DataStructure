@@ -25,10 +25,10 @@ class TreeNode{
  *        2 3
  *        ...
  */
-vector<vector<int>> printTreeByLevel(TreeNode* root);
+//vector<vector<int>> printTreeByLevel(TreeNode* root);
 
-
+void printk();
 //create tree
-TreeNode* createTree();
+//TreeNode* createTree();
 
 #endif //DATASTRUCTURE_TREENODE_H
