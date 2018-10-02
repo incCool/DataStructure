@@ -3,5 +3,6 @@
 #incude <string>
 int main() {
     printH();
+    int nihao ;
     return 0;
 }
