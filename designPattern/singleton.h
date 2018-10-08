@@ -6,11 +6,14 @@
 #define DATASTRUCTURE_SINGLETON_H
 
 #include <iostream>
-
+#include <process.h>
+#include <windows.h>
+#include <winbase.h>
 using namespace std;
 
 //¿¡∫∫ Ω
 class Singelton {
+
 private:
     Singelton() {
         m_singer = NULL;
@@ -31,6 +34,13 @@ public:
         cout << "m_count: " << m_count << endl;
     }
 
+    static void FreeSingleton() {
+        if (m_singer != NULL) {
+            cout << "FreeSingleton..." << endl;
+            delete m_singer;
+            m_singer = NULL;
+        }
+    }
 private:
     static Singelton *m_singer;
     static int m_count;
@@ -52,6 +62,8 @@ void main01_1() {
     p1->printT();
     p2->printT();
 
+    cout << GetCurrentThreadId() << endl;
+    Singelton::FreeSingleton();
 
     return;
 }
