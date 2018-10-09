@@ -49,6 +49,12 @@ private:
 Singelton *Singelton::m_singer = NULL;  //懒汉式 并没有创建单例对象
 int Singelton::m_count = 0;
 
+unsigned threadfunc(void *mylpAdd) {
+    int id = GetCurrentThreadId();
+    cout << "ThreadFunc id : " << endl;
+    Singelton::getInstance()->printT();
+    return 1;
+}
 
 void main01_1() {
     cout << "演示 懒汉式" << endl;

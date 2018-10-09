@@ -5,10 +5,13 @@
 #include "hfiles/qsort.h"
 #include "designPattern/singleton.h"
 #include "designPattern/singleton2.h"
+#include "designPattern/factoryinc.h"
+#include "niuke/heapsort.h"
+#include "niuke/insertsort.h"
 
 using namespace std;
 int main() {
 
-    main01_1();
+
     return 0;
 }
