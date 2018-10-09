@@ -3,5 +3,6 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/designPattern/singleton.h" charset="GB2312" />
     <file url="file://$PROJECT_DIR$/designPattern/singleton2.h" charset="GB2312" />
+    <file url="file://$PROJECT_DIR$/niuke/heapsort.h" charset="GB2312" />
   </component>
 </project>
