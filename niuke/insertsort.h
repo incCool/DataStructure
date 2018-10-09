@@ -43,6 +43,7 @@ void shellSort(int *A, int n) {
 
 
 int mainInsertSort() {
+
     int a[] = {1, 2, 2, 5, 3, 3, 7, 90, 6, 5, 0, 6, 3};
     int *p = a;
     //insertSort(p,13);
