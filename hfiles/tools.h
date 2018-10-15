@@ -6,12 +6,11 @@
 #define DATASTRUCTURE_TOOLS_H
 
 #include <iostream>
+#include <vector>
+#include <stack>
+#include <algorithm>
 using namespace std;
 
-void printH()
-{
-    cout<<"nihao"<<endl;
-}
 
 
 
