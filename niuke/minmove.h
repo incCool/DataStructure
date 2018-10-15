@@ -1,5 +1,18 @@
 //
 // Created by inc on 2018/10/10.
+// leetcode 45:
+// Given an array of non-negative integers, you are initially positioned at the first index of the array.
+//
+//Each element in the array represents your maximum jump length at that position.
+//
+//Your goal is to reach the last index in the minimum number of jumps.
+//
+//Example:
+//
+//Input: [2,3,1,1,4]
+//Output: 2
+//Explanation: The minimum number of jumps to reach the last index is 2.
+//    Jump 1 step from index 0 to 1, then 3 steps to the last index.
 //
 
 #ifndef DATASTRUCTURE_MINMOVE_H
@@ -23,11 +36,13 @@ vector<int> minMove(vector<int> vect) {
         result.push_back(len);
         return result;
     }
+
     int indexOfMaxNum;
     for (int i = 0; i < vsize; i = i + indexOfMaxNum) {
         maxNum = 0;
         indexOfMaxNum = 0;
         for (j = 0; j < vsize && j <= vect[i]; j++) {
+            //j+i : 当前位置 ，vect[j+i]:代表当前位置元素， vect[j+i]+j+i:表示当前位置所能到达的位置
             if ((vect[j + i] + j + i < len) && maxNum < vect[j + i] + j + i) {
                 maxNum = vect[j + i] + j + i;
                 indexOfMaxNum = j + i;
