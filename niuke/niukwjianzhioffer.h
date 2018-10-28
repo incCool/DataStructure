@@ -20,6 +20,8 @@ public:
 
     //测试直接插入和希尔排序
     int mainInsertSort();
+
+
 };
 
 #endif //DATASTRUCTURE_NIUKWJIANZHIOFFER_H
