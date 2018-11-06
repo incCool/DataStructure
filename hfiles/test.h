@@ -11,4 +11,7 @@ using namespace std;
 
 void printk();
 
+static int count = 10;
+
+
 #endif //DATASTRUCTURE_TEST_H
