@@ -23,22 +23,23 @@
 
 using namespace std;
 
+//数组中没有0元素
 vector<int> minMove(vector<int> vect) {
     vector<int> result;
     int vsize = vect.size(), len = vsize - 1;
-    if (vsize < 2) {
-        result.push_back(1);
-        return result;
-    }
-    int j;
     int maxNum = vect[0];
     if (maxNum >= len) {
         result.push_back(len);
         return result;
     }
+    if (vsize < 2) {
+        result.push_back(1);
+        return result;
+    }
+    int j;
 
     int indexOfMaxNum;
-    for (int i = 0; i < vsize; i = i + indexOfMaxNum) {
+    for (int i = 0; i < vsize; i = indexOfMaxNum) {
         maxNum = 0;
         indexOfMaxNum = 0;
         for (j = 0; j < vsize && j <= vect[i]; j++) {
@@ -59,6 +60,7 @@ vector<int> minMove(vector<int> vect) {
     return result;
 }
 
+//数组元素非负数
 int minStep(vector<int> vect) {
     int vsize = vect.size();
     int last = 0;//上一次能达到的位置
@@ -81,9 +83,13 @@ int main_minmove() {
     vect.push_back(3);
     vect.push_back(1);
     vect.push_back(1);
-    vect.push_back(2);
+    vect.push_back(1);
+    vect.push_back(3);
     vect.push_back(1);
     vect.push_back(1);
+    vect.push_back(1);
+    vect.push_back(1);
+
     //cout<<minStep(vect);
 
     vector<int> result;

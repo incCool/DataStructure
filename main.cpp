@@ -1,17 +1,12 @@
 #include <iostream>
-#include "hfiles/tools.h"
-#include "hfiles/countingSortInc.h"
-#include "hfiles/test.h"
-#include "hfiles/qsort.h"
-#include "designPattern/singleton.h"
-#include "designPattern/singleton2.h"
-#include "designPattern/factoryinc.h"
-#include "niuke/heapsort.h"
-#include "niuke/insertsort.h"
+#include <vector>
+#include <string>
+#include <map>
 
 using namespace std;
+
 int main() {
-
-
+    FooUse fu;
+    fu.pp();
     return 0;
 }
