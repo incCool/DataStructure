@@ -5,11 +5,17 @@
 #include "demo/demodefine.h"
 #include<stdio.h>
 #include "demo/demodefineuse.h"
+#include "demo/democonst.h"
 using namespace std;
 
-typedef int type;
+
+void func(int a, int &b);
+
 
 int main() {
-    main_defineuse();
+
+    cout << sizeof(A) << endl;
     return 0;
 }
+
+
