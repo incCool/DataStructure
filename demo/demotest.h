@@ -5,19 +5,10 @@
 #ifndef DATASTRUCTURE_DEMOTEST_H
 #define DATASTRUCTURE_DEMOTEST_H
 
+#include "iostream"
 #include "../hfiles/tools.h"
 #include "demohash.h"
 
-void main_testdemo() {
-
-    vector<string> vstr;
-    vstr.push_back("nihao");
-    vstr.push_back("nihao");
-    vstr.push_back("nn");
-    vstr.push_back("nn");
-    HashFunc hf(vstr);
-    hf.print();
-
-}
+void main_testdemo();
 
 #endif //DATASTRUCTURE_DEMOTEST_H
