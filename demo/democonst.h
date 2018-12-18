@@ -47,7 +47,13 @@ public:
 class A {
 public:
     int loc;
-    string name;
+
+    virtual void print();
+
+    enum fruit {
+        apple, pear
+    };
+    fruit f;
 
 };
 
