@@ -9,44 +9,57 @@
 //#include "demo/demotemp.h"
 //#include "demo/test.h"
 //#include "demo/learnfunpointer.h"
-#include "demo/demochuanzhi.h"
-
-class DEMO {
-private:
-    void print() { cout << "private:" << endl; }
-};
-
+#include "tree/demotree.h"
 
 using namespace std;
 
-bool setHostTime(int &curCycle, int &curMon, int &curDay, int &curWeek, int &curHour) {
-    time_t tt = time(NULL);
-    struct tm *t = localtime(&tt);
-
-    curCycle = (t->tm_year + 1900) * 100 + (t->tm_mon + 1);
-    curMon = t->tm_mon + 1;
-    curDay = t->tm_mday;
-    curWeek = t->tm_wday;
-    curHour = t->tm_hour;
-    cout << "curMon: " << curMon << endl;
-    return true;
-}
-
-long strToNumber(const string &str) {
-    string y = str;
-    if ("" == y) {
-        y = "0";
-    }
-    return atol(str.c_str());
-}
 
 int main(int argc, char *argv[]) {
 
-    string str = "abc";
+    Tree *t = new Tree();
+    Node *node1 = new Node();
+    node1->index = 1;
+    node1->data = 5;
 
-    cout << str[0] << endl;
+    Node *node2 = new Node();
+    node2->index = 2;
+    node2->data = 8;
 
-    int &&b = 12;
+    Node *node3 = new Node();
+    node3->index = 3;
+    node3->data = 2;
+
+    Node *node4 = new Node();
+    node4->index = 4;
+    node4->data = 6;
+
+    Node *node5 = new Node();
+    node5->index = 5;
+    node5->data = 9;
+
+    Node *node6 = new Node();
+    node6->index = 6;
+    node6->data = 7;
+
+    t->AddNode(0, 0, node1);
+    t->AddNode(0, 1, node2);
+
+    t->AddNode(1, 0, node3);
+    t->AddNode(1, 1, node4);
+
+    t->AddNode(2, 0, node5);
+    t->AddNode(2, 1, node6);
+
+    //t->PreorderTraversal();
+
+    t->InorderTraversal();
+
+    t->DeleteNode(2, nullptr);
+    cout << endl;
+    cout << "Inorder:" << endl;
+    t->InorderTraversal();
+
+    delete t;
     return 0;
 }
 
