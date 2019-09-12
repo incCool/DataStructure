@@ -2,17 +2,21 @@
 #include <vector>
 #include <string>
 #include <map>
-#include "demo/demodefine.h"
-#include<stdio.h>
-#include "demo/demodefineuse.h"
-#include "demo/democonst.h"
-#include "demo/demotest.h"
+#include <scoped_allocator>
+#include <set>
+#include <time.h>
+#include "stdlib.h"
+//#include "demo/demotemp.h"
+//#include "demo/test.h"
+//#include "demo/learnfunpointer.h"
+#include "tree/demotree.h"
+
 using namespace std;
 
 
-int main() {
+int main(int argc, char *argv[]) {
 
-    main_testdemo();
+    test_main_tree();
     return 0;
 }
 
