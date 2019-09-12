@@ -81,4 +81,7 @@ private:
     Node *m_pRoot;
 };
 
+
+void test_main_tree();
+
 #endif //DATASTRUCTURE_DEMOTREE_H
